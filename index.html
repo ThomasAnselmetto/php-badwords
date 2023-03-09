@@ -7,10 +7,16 @@
     <title>Bad Words</title>
   </head>
   <body>
+    <!-- titolo form -->
     <h1>Form delle parole cattive</h1>
+    <!-- definisco il form ed uso action per mandarlo all'altro file in php e method get per vederlo nell'url -->
     <form action="./bad_words.php" method="GET">
-      <label for="paragraph">paragrafo</label>
+      <label for="paragraph">Paragrafo</label>
       <input type="text" id="paragraph" name="paragraph" />
+      <br />
+      <br />
+      <label for="badword"> Parola Cattiva </label>
+      <input type="text" id="badword" name="badword" />
       <button>invia</button>
     </form>
   </body>
