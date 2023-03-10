@@ -12,12 +12,30 @@
     <!-- definisco il form ed uso action per mandarlo all'altro file in php e method get per vederlo nell'url -->
     <form action="./bad_words.php" method="GET">
       <label for="paragraph">Paragrafo</label>
-      <input type="text" id="paragraph" name="paragraph" />
+      <textarea
+        name="paragraph"
+        id="paragraph"
+        cols="30"
+        rows="10"
+        placeholder="paragrafo"
+      ></textarea>
       <br />
       <br />
       <label for="badword"> Parola Cattiva </label>
-      <input type="text" id="badword" name="badword" />
+      <input type="text" id="badword" name="badword" placeholder="badword" />
       <button>invia</button>
+
+      <h2>paragrafi d'esempio</h2>
+      <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, at!
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          aspernatur cumque voluptas maiores ad voluptates.
+        </li>
+      </ul>
     </form>
   </body>
 </html>
